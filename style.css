@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+
+
+body{
+    text-align: center;
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-blend-mode: luminosity;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+#logo{
+    border-radius: 20px !important;
+}
+nav ul li{
+    padding-inline: 5px;
+}
+nav ul li a{
+    font-family: "Archivo Narrow";
+    color: black !important; 
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: beige;
+    padding: 3px;
+}
+nav ul li a:hover{
+    color: white !important;
+    background: black !important;
+    
+}
+
+input{
+    color: rgb(0, 15, 15);
+    background-color: rgb(217, 232, 233) !important;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+label{
+    border: 3px solid black;
+    border-radius: 6px;
+    background: rgb(217, 232, 233);
+    font-weight: bolder;
+}
+
+
+
+.main{
+    background-color: rgb(230, 236, 234);
+    width: 500px;
+    height: 520px;
+    margin-left: 540px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.div{
+    padding: 15px;
+    border-radius: 20px;
+}
+input{
+    padding: 5px;
+}
+#title{
+    font-family: 'Alexandria';
+    font-weight: lighter;
+    font-size: 25px;
+}
+#task{
+    font-family: "Archivo Narrow";
+}
+#comment{
+    font-family: 'Annie Use Your Telescope';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label{
+    padding: 5px;
+    font-family: 'Advent Pro';
+}
+#date-label{
+    margin-left: 164px;
+}
+#time-label{
+    margin-left: 190px;
+}
+
+#date{
+    margin-left: 120px;
+    font-family: "Archivo Narrow";
+}
+#time{
+    margin-left: 140px;
+    font-family: "Archivo Narrow";
+}
+
+
+.btn{
+    border: 3px solid black !important;
+    border-radius: 8px !important;
+    font-family: "Archivo Narrow";
+    margin: 70px 0 0 140px;
+}
+.btn:hover{
+    background-color: black;
+    color: white !important;
+}
+
+@media only screen and (max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   
+    main{
+        height: 100%;
+        margin-left: 22px;
+    }
+    .main{
+        margin-left: 20px;
+        justify-content: center;
+        background-color: rgb(230, 236, 234);
+    }
+    .div {
+        margin-right: 0;
+        padding: 25px;
+        border: none;
+    }
+   
+    label{
+        margin: 0;
+        padding: 5px;
+    }
+}
