@@ -21,8 +21,15 @@ header{
 #logo{
     border-radius: 20px !important;
 }
-nav ul li{
-    padding-inline: 5px;
+
+.navbar{
+    background: rgb(240, 238, 236);
+}
+
+.navbar ul li a{
+    width: 100px;
+    margin: 2px;
+    padding-left: 10px;
 }
 nav ul li a{
     font-family: "Archivo Narrow";
@@ -30,13 +37,13 @@ nav ul li a{
     font-weight: bold;
     border: 2px solid black;
     border-radius: 20px;
-    background-color: beige;
-    padding: 3px;
+    /* background-color: beige; */
+    padding: 0;
+    margin-left: 33px !important;
 }
 nav ul li a:hover{
     color: white !important;
-    background: black !important;
-    
+    background: black !important;    
 }
 
 input{
@@ -57,13 +64,14 @@ label{
 .main{
     background-color: rgb(230, 236, 234);
     width: 500px;
-    height: 520px;
+    height: 100%;
     margin-left: 540px;
     border-radius: 10px;
     padding: 10px;
 }
 
 .div{
+    height: 100%;
     padding: 15px;
     border-radius: 20px;
 }
@@ -88,6 +96,9 @@ label{
     padding: 5px;
     font-family: 'Advent Pro';
 }
+input{
+    width: 100%;
+}
 #date-label{
     margin-left: 164px;
 }
@@ -109,19 +120,38 @@ label{
     border: 3px solid black !important;
     border-radius: 8px !important;
     font-family: "Archivo Narrow";
-    margin: 70px 0 0 140px;
+    margin: 3px;
 }
 .btn:hover{
     background-color: black;
     color: white !important;
 }
 
+.button{
+    margin-left: 155px;
+}
+
+/* phones */
 @media only screen and (max-width: 600px){
     *{
         margin: 0;
         padding: 0;
     }
-   
+  
+   .nav-item .nav-link{
+    border: none;
+   }
+   nav ul li a:hover{
+    width: 600px;
+    padding: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid black !important;
+    border-radius: 4px;
+    color: whitesmoke !important;
+    background: black !important;    
+}
+
     main{
         height: 100%;
         margin-left: 22px;
@@ -140,5 +170,176 @@ label{
     label{
         margin: 0;
         padding: 5px;
+    }
+    input{
+        width: 100%;
+    }
+    #create-task{
+        margin: auto;
+    }
+}
+
+/* phones */
+@media only screen and (max-width: 1200px) and (min-width: 400px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(./images/bg2.jpg);
+        width: auto;
+        text-align: center;
+    }
+  
+   
+   .nav-item .nav-link{
+    border: none;
+   }
+   nav ul li a:hover{
+    width: 80px;
+    padding: 5px;
+    margin-left: auto;
+    border: 2px solid black !important;
+    border-radius: 4px;
+    color: whitesmoke !important;
+    background: black !important;    
+}
+
+    main{
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+    .main{
+        width: auto;
+        margin-left: 20px;
+        justify-content: center;
+        background-color: rgb(230, 236, 234);
+    }
+    .div {
+        margin-right: 0;
+        padding: 25px;
+        border: none;
+        align-self: center;
+    }
+   
+    label{
+        margin: 0;
+        padding: 5px;
+    }
+    input{
+        width: 100%;
+    }
+    .button{
+        margin-left: 50px !important;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(./images/bg2.jpg);
+        width: auto;
+    }
+  
+   
+   .nav-item .nav-link{
+    border: none;
+   }
+   nav ul li a:hover{
+    width: 80px;
+    padding: 5px;
+    margin-left: auto;
+    border: 2px solid black !important;
+    border-radius: 4px;
+    color: whitesmoke !important;
+    background: black !important;    
+}
+
+    main{
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+    .main{
+        width: auto;
+        margin-left: 20px;
+        justify-content: center;
+        background-color: rgb(230, 236, 234);
+    }
+    .div {
+        margin-right: 0;
+        padding: 25px;
+        border: none;
+    }
+   
+    label{
+        margin: 0;
+        padding: 5px;
+    }
+    input{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+}
+    
+
+@media only screen and (max-width: 900px) and (min-width: 701px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(./images/bg2.jpg);
+        width: auto;
+        text-align: center;
+    }
+  
+   
+   .nav-item .nav-link{
+    border: none;
+   }
+   nav ul li a:hover{
+    width: 80px;
+    padding: 5px;
+    margin-left: auto;
+    border: 2px solid black !important;
+    border-radius: 4px;
+    color: whitesmoke !important;
+    background: black !important;    
+}
+
+    main{
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+    .main{
+        width: auto;
+        margin-left: 20px;
+        justify-content: center;
+        background-color: rgb(230, 236, 234);
+    }
+    .div {
+        margin-right: 0;
+        padding: 25px;
+        border: none;
+        align-self: center;
+    }
+   
+    label{
+        margin: 0;
+        padding: 5px;
+    }
+    .button{
+        margin-left: auto !important;
     }
 }
