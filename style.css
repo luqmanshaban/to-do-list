@@ -60,7 +60,9 @@ label{
     font-weight: bolder;
 }
 
-
+main{
+    margin-left: 35%;
+}
 
 .main{
     background-color: rgb(230, 236, 234);
