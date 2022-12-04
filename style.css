@@ -47,6 +47,21 @@ nav ul li a:hover{
     background: black !important;    
 }
 
+form .nav-link{
+    color: black;
+    text-decoration: none;
+    border: 3px solid black !important;
+    border-radius: 8px !important;
+    font-family: "Archivo Narrow";
+    margin: 3px;
+}
+form .nav-link:hover{
+    background-color: black;
+    color: white !important;
+}
+
+
+
 input{
     color: rgb(0, 15, 15);
     background-color: rgb(217, 232, 233) !important;
@@ -119,16 +134,6 @@ input{
 }
 
 
-.btn{
-    border: 3px solid black !important;
-    border-radius: 8px !important;
-    font-family: "Archivo Narrow";
-    margin: 3px;
-}
-.btn:hover{
-    background-color: black;
-    color: white !important;
-}
 
 
 /* phones */
